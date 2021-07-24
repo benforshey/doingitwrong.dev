@@ -1,4 +1,61 @@
-<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Custom Elements Sandbox</title> <script type="module" data-stencil data-resources-url="/build/" data-stencil-namespace="custom-elements">import{p as e,b as t}from"/build/p-5a658397.js";(()=>{const t=import.meta.url,i={};return""!==t&&(i.resourcesUrl=new URL(".",t).href),e(i)})().then((e=>t([["p-168f4b7e",[[1,"time-display",{timeString:[32]},[[7,"timeEmitterUpdate","handleTimeChange"]]],[1,"time-display-binary",{timeValue:[16],timeKey:[1,"time-key"]}],[1,"time-emitter",{updateInterval:[2,"update-interval"]}]]],["p-ae81c4d4",[[1,"time-display-decimal",{timeValue:[1,"time-value"],timeKey:[1,"time-key"]}]]]],e)));</script> <script nomodule="" src="/build/custom-elements.js" data-stencil></script> <style>:root {
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Binary-Coded Decimal Clock</title>
+    <script
+      type="module"
+      data-stencil
+      data-resources-url="/build/"
+      data-stencil-namespace="custom-elements"
+    >
+      import { p as e, b as t } from "/build/p-5a658397.js";
+      (() => {
+        const t = import.meta.url,
+          i = {};
+        return "" !== t && (i.resourcesUrl = new URL(".", t).href), e(i);
+      })().then((e) =>
+        t(
+          [
+            [
+              "p-168f4b7e",
+              [
+                [
+                  1,
+                  "time-display",
+                  { timeString: [32] },
+                  [[7, "timeEmitterUpdate", "handleTimeChange"]],
+                ],
+                [
+                  1,
+                  "time-display-binary",
+                  { timeValue: [16], timeKey: [1, "time-key"] },
+                ],
+                [1, "time-emitter", { updateInterval: [2, "update-interval"] }],
+              ],
+            ],
+            [
+              "p-ae81c4d4",
+              [
+                [
+                  1,
+                  "time-display-decimal",
+                  { timeValue: [1, "time-value"], timeKey: [1, "time-key"] },
+                ],
+              ],
+            ],
+          ],
+          e
+        )
+      );
+    </script>
+    <script nomodule="" src="/build/custom-elements.js" data-stencil></script>
+    <style>
+      :root {
         --background: #f9f5d7;
         --circle--off: #bdae93;
         --circle--on: #b57614;
@@ -23,8 +80,8 @@
         margin: 0;
       }
 
-      ul[role='list'],
-      ol[role='list'] {
+      ul[role="list"],
+      ol[role="list"] {
         list-style: none;
       }
 
@@ -80,4 +137,16 @@
           transition-duration: 0.01ms !important;
           scroll-behavior: auto !important;
         }
-      }</style> </head> <body> <time-emitter update-interval="500"> <time-display> <time-display-binary time-key="hours"></time-display-binary> <time-display-binary time-key="minutes"></time-display-binary> <time-display-binary time-key="seconds"></time-display-binary> </time-display> </time-emitter> </body></html>
+      }
+    </style>
+  </head>
+  <body>
+    <time-emitter update-interval="500">
+      <time-display>
+        <time-display-binary time-key="hours"></time-display-binary>
+        <time-display-binary time-key="minutes"></time-display-binary>
+        <time-display-binary time-key="seconds"></time-display-binary>
+      </time-display>
+    </time-emitter>
+  </body>
+</html>
