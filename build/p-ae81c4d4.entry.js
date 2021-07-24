@@ -1,0 +1,1 @@
+import{r as s,h as l,H as r}from"./p-5a658397.js";const t=class{constructor(l){s(this,l)}render(){return l(r,null,l("slot",null))}};t.style=":host{display:block}";export{t as time_display_decimal}
