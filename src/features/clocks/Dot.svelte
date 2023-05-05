@@ -13,8 +13,8 @@
 
 <style>
 	circle {
-		--circle--off: #bdae93;
-		--circle--on: #b57614;
+		--circle--off: ButtonFace;
+		--circle--on: ButtonText;
 
 		transition: fill 200ms ease-out;
 	}
