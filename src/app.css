@@ -48,6 +48,8 @@ h6 {
 	overflow-wrap: break-word;
 }
 
+/* End CSS Rest */
+
 body {
 	background-color: Canvas;
 	color: CanvasText;
@@ -55,4 +57,16 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
 		helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 	isolation: isolate;
+}
+
+dd:has(dd) {
+	margin-inline-start: 2rem;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dt + dd {
+	margin-block-end: 2rem;
 }
