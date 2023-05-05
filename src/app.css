@@ -59,8 +59,16 @@ body {
 	isolation: isolate;
 }
 
+p + p {
+	margin-block-start: 1em;
+}
+
+dl:has(dd) {
+	margin-block-start: 1em;
+}
+
 dd:has(dd) {
-	margin-inline-start: 2rem;
+	margin-inline-start: 2em;
 }
 
 dt {
@@ -68,5 +76,5 @@ dt {
 }
 
 dt + dd {
-	margin-block-end: 2rem;
+	margin-block-end: 2em;
 }
