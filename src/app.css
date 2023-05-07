@@ -94,7 +94,6 @@ dt + dd {
 }
 
 blockquote:has(+ p),
-p:has(+ p),
 p + p {
 	margin-block-start: 1em;
 }
