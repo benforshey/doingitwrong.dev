@@ -49,18 +49,32 @@ h6 {
 }
 
 /* End CSS Rest */
+blockquote {
+	background-color: ButtonFace;
+	margin-inline-start: 1.75em;
+	max-width: calc(100vw - 10em);
+	padding: 0.5em;
+	position: relative;
+}
+
+blockquote::after {
+	content: '\201D';
+	font-size: 8em;
+	color: GrayText;
+	position: absolute;
+	right: -0.375em;
+	top: 0.25em;
+	line-height: 0;
+}
 
 body {
 	background-color: Canvas;
 	color: CanvasText;
 	color-scheme: light dark;
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
-		helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+		helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+		sans-serif;
 	isolation: isolate;
-}
-
-p + p {
-	margin-block-start: 1em;
 }
 
 dl:has(dd) {
@@ -77,4 +91,14 @@ dt {
 
 dt + dd {
 	margin-block-end: 2em;
+}
+
+blockquote:has(+ p),
+p:has(+ p),
+p + p {
+	margin-block-start: 1em;
+}
+
+ul:has(+ p) {
+	margin-block-start: 0.25em;
 }

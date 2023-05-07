@@ -1,5 +1,10 @@
-<script>
-	import './books.css';
-</script>
+<main>
+	<slot />
+</main>
 
-<slot />
+<style>
+	main {
+		margin-inline: auto;
+		max-width: 40rem;
+	}
+</style>
