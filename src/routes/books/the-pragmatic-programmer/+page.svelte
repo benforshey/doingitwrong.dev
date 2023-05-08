@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Books: The Pragmatic Programmer</title>
+	<title>Books: The Pragmatic Programmer &middot; Doing it Wrong</title>
 </svelte:head>
 
 <h1>Notes on The Pragmatic Programmer</h1>
