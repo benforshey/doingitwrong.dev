@@ -1,6 +1,9 @@
-<svelte:head>
-	<title>Books: The Pragmatic Programmer &middot; Doing it Wrong</title>
-</svelte:head>
+<nav>
+	<ul>
+		<li><a href="/books/the-pragmatic-programmer/exercises">Exercises</a></li>
+		<li><a href="/books/the-pragmatic-programmer/tips">Tips</a></li>
+	</ul>
+</nav>
 
 <h1>Notes on The Pragmatic Programmer</h1>
 
@@ -64,7 +67,9 @@
 			</dl>
 		</dd>
 	</dl>
+</section>
 
+<section>
 	<h2>Chapter One</h2>
 
 	<dl>
@@ -296,92 +301,54 @@
 </section>
 
 <section>
-	<h2>One Hundred Tips</h2>
+	<h2>Chapter Two</h2>
 
 	<dl>
-		<dt>p. xvi: &numero;1 Care About Your Craft</dt>
+		<dt>pp. 28&ndash;30: The Essence of Good Design</dt>
 		<dd>
-			Not just care about being right, or care about being respected: care about
-			your craft.
+			Good design is <abbr>ETC</abbr> (Easier to Change). This is a value, not a
+			rule. If you&rsquo;re not sure what is easier to change while writing code,
+			write a note about this situation. When the time comes to change the code,
+			learn from your note&mdash;you&rsquo;ll train your instinct.
 		</dd>
 
-		<dt>p. xvi: &numero;2 Think! About Your Work</dt>
+		<dt>pp. 30&ndash;38: DRY&ndash;The Evils of Duplication</dt>
 		<dd>
-			It&rsquo;s hard work but rewarding. You&rsquo;ll improve in your
-			craftsmanship.
-		</dd>
-
-		<dt>p. 1: &numero;3 You Have Agency</dt>
-		<dd>
-			&ldquo;You can change your organization or change your
-			organization.&rdquo; &mdash;<cite>Martin Fowler</cite>
-		</dd>
-
-		<dt>p. 4: &numero;4 Provide Options, Don&rsquo;t Make Lame Excuses</dt>
-		<dd>
-			You can factor in everything that went wrong&mdash;including that which is
-			outside your control&mdash;but holding yourself accountable and providing
-			options to move forward shows humility and dedication to your craft.
-		</dd>
-
-		<dt>p. 7: &numero;5 Don&rsquo;t Live with Broken Windows</dt>
-		<dd>
-			Hey, that project you worked on where that suite of tests didn't pass but
-			you never fixed it? It&rsquo;s only getting worse&hellip;you&rsquo;ve
-			stopped writing new tests.
-		</dd>
-
-		<dt>p. 9: &numero;6 Be a Catalyst for Change</dt>
-		<dd>
-			&ldquo;It&rsquo;s easier to ask for forgiveness than it is to get
-			permission.&rdquo; &mdash;<cite>Rear Admiral Dr. Grace Hopper</cite>
-		</dd>
-
-		<dt>p. 10: &numero;7 Remember the Big Picture</dt>
-		<dd>
-			This differs from tip &numero; 7, in which one stops caring. When you lose
-			sight of the big picture, you just don&rsquo;t notice how things
-			deteriorate.
-		</dd>
-
-		<dt>p. 12: &numero;8 Make Quality a Requirements Issue</dt>
-		<dd>
-			<a
-				href="https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good"
-				rel="noopener">Perfect is the enemy of good</a
-			>
-		</dd>
-
-		<dt>p. 15: &numero;9 Invest Regularly in Your Knowledge Portfolio</dt>
-		<dd>
-			Invest regularly; diversify; manage risk; buy low, sell high; review and
-			rebalance.
-		</dd>
-
-		<dt>p. 17: &numero;10 Critically Analyze What You Read and Hear</dt>
-		<dd>Perhaps even get into a good discussion with a friend.</dd>
-
-		<dt>p. 20: &numero;11 English is Just Another Programming Language</dt>
-		<dd>
-			Write natural language as you would natural code: honor the <dfn
-				><abbr title="Don&rsquo;t Repeat Yourself">DRY</abbr></dfn
-			>
-			principle, the <dfn><abbr title="Easier To Change">ETC</abbr></dfn> principle,
-			automation, etc.
-		</dd>
-
-		<dt>
-			p. 22: &numero;12 It&rsquo;s Both What You Say and the Way You Say It
-		</dt>
-		<dd>
-			The more effective your communication, the more influental you can become.
-		</dd>
-
-		<dt>p. 23: &numero;13 Build Documentation In, Don&rsquo;t Bolt It On</dt>
-		<dd>
-			Comment source code with the <em>why</em>; <em>how</em> should be apparent
-			in your code. In&dash;code comments can capture engineering trade&dash;offs,
-			why decisions were made, what other alternatives were discarded, etc.
+			<p>
+				<abbr>DRY</abbr> stands for &ldquo;Don&rsquo;t Repeat Yourself&rdquo;.
+				<abbr>DRY</abbr> applies to code, but it applies to more than code:
+				every piece of knowledge must have a single, unambiguous, authoritative
+				representation within a system. You may choose to violate
+				<abbr>DRY</abbr> for performance reasons, but try to localize the duplication.
+			</p>
+			<p>
+				I&rsquo;m not sure how I feel about this: &ldquo;Where possible, always
+				use accessor functions to read and write the attributes of
+				objects.&rdquo; This is recommended because when a module exposes a data
+				structure (and I access the exposed data structure directly), I&rsquo;m
+				coupling my code to that data structure. This makes sense, but it
+				does&rsquo;nt mean that I will always write getters and setters for my
+				Objects in JavaScript&hellip;though I might be more likely to use a Map.
+			</p>
+			<p>
+				Using accessors for objects honors Meyer&rsquo;s Uniform Access
+				principle, described in <i>Object&dash;Oriented Software Construction</i
+				>, stating that
+				<q
+					>All services offered by a modules should be available through a
+					uniform notation, which does not betray whether they are implemented
+					through storage or through computation.</q
+				>
+			</p>
+			<p>
+				To prevent duplication in data structures, rather than manually creating
+				a fixed structure that represents external data (Struct / Class), stick
+				it in a simple key&thinsp;/&thinsp;value data structure. You can use a
+				tool like <a href="https://zod.dev/" rel="noopener" target="_blank"
+					>Zod
+				</a>to regain data surety.
+			</p>
+			<p>To prevent inter&dash;developer duplication, communicate!</p>
 		</dd>
 	</dl>
 </section>

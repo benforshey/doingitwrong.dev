@@ -1,14 +1,20 @@
 <script>
+	import DraftText from '../features/DraftText.svelte';
 	import BinaryDecimalClock from '../features/clocks/BinaryDecimalClock.svelte';
 </script>
-
-<svelte:head>
-	<title>Home &middot; Doing it Wrong</title>
-</svelte:head>
 
 <h1>Doing it Wrong</h1>
 
 <BinaryDecimalClock />
+
+<p>
+	an
+	<DraftText
+		><del>imperfect</del>
+		<del>in-progress</del><ins>ever-growing</ins></DraftText
+	>
+	digital garden
+</p>
 
 <nav>
 	<ul>

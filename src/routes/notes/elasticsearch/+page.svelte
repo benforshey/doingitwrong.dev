@@ -1,7 +1,3 @@
-<svelte:head>
-	<title>Notes: Elasticsearch &middot; Doing it Wrong</title>
-</svelte:head>
-
 <h1>Elasticsearch: This Could be a Career</h1>
 
 <h2>Implementing a Custom Analyzer</h2>
