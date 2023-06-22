@@ -2,6 +2,7 @@
 	import Highlight from 'svelte-highlight';
 	import python from 'svelte-highlight/languages/python';
 	import 'svelte-highlight/styles/gruvbox-dark-medium.css';
+	import ToC from '../../../../features/table-of-contents/ToC.svelte';
 </script>
 
 <nav>
@@ -13,8 +14,10 @@
 
 <h1>Exercises from The Pragmatic Programmer</h1>
 
+<ToC />
+
 <dl>
-	<dt>p. 46: &numero;1</dt>
+	<dt data-toc-id="1">p. 46: &numero;1</dt>
 	<dd>
 		<h2>Exercise</h2>
 
@@ -68,7 +71,7 @@
 		No change in my answer, really.
 	</dd>
 
-	<dt>p. 46: &numero;2</dt>
+	<dt data-toc-id="2">p. 46: &numero;2</dt>
 	<dd>
 		<h2>Exercise</h2>
 
@@ -82,30 +85,29 @@
 
 		<p>
 			I&rsquo;ll admit my bias and my lack of expertise in the same breath—I
-			prefer functional languages over object-oriented languages, but am an
-			expert in neither. I&rsquo;ve used Java (epitome of OOP) and Clojure
-			(epitome of functional), but most of my daily work is done in JavaScript,
-			which cleanly falls into neither category. I tend toward preferring
-			functional patterns in that, too. I find that orthogonality and
-			class-based inheritance fight against each other.
+			prefer functional languages over object-oriented languages but am an
+			expert in neither. I&rsquo;ve used Java (in my limited experience, an
+			epitome of the OOP paradigm) and Clojure (in my limited experience, an
+			epitome of the functional paradigm), so I have at least <em>some</em> breadth
+			of experience. Still, most of my daily work is done in JavaScript, which cleanly
+			falls into neither category. When I write JavaScript I tend toward preferring
+			functional patterns. At least the way I write code, orthogonality and class-based
+			inheritance fight against each other.
 		</p>
 
 		<p>
 			You can find tutorials on how to use Java within a mostly-functional
 			paradigm, but the majority of instructional material and the language
-			itself will push you into its class-based object-oriented design. By
-			saying &ldquo;push you into its...design&rdquo;, I&rsquo;m answering the
-			exercise&rsquo;s question: those differences are inherited in the
-			language. I could work hard to overcome the language's DNA by developing
-			in a functional style, but I&rsquo;ll always be fighting against the
-			culture of Java and its syntax.
+			itself will push you into its class-based object-oriented design. I could
+			work hard to overcome the language's DNA by developing in a functional
+			style, but I would be fighting against the culture of the language.
 		</p>
 
 		<p>
 			My answer differs slightly for functional languages. They don&rsquo;t
-			offer class-based inheritance—there's composition instead. I can&rsquo;t
-			imagine wanting to (being able to?) write something like object-oriented
-			code in Clojure.
+			offer class-based inheritance—there&rsquo;s composition instead. I
+			can&rsquo;t imagine wanting to (being able to?) write something like
+			object-oriented code in Clojure.
 		</p>
 
 		<h2>Solution after Reading Possible Answer</h2>

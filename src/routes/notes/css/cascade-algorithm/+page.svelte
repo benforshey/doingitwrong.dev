@@ -1,6 +1,14 @@
+<script>
+	import ToC from '../../../../features/table-of-contents/ToC.svelte';
+</script>
+
 <h1>The Cascade Algorithm</h1>
 
-<h2>Four Stages of the Cascade Algorithm</h2>
+<ToC />
+
+<h2 data-toc-id="stages-of-cascade-algorithm">
+	Four Stages of the Cascade Algorithm
+</h2>
 
 <p>The cascade algorithm is split into 4 distinct stages.</p>
 
@@ -22,7 +30,7 @@
 	</li>
 </ol>
 
-<h2>Order of Specificity for Origins</h2>
+<h2 data-toc-id="order-of-specificity">Order of Specificity for Origins</h2>
 
 <ol>
 	<li>
@@ -50,7 +58,7 @@
 	</li>
 </ol>
 
-<h2>Order of Importance</h2>
+<h2 data-toc-id="order-of-importance">Order of Importance</h2>
 
 <ol>
 	<li>normal rule type, such as font-size, background or color</li>
