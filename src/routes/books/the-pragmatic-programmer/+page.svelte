@@ -1,3 +1,7 @@
+<script>
+	import ToC from '../../../features/table-of-contents/ToC.svelte';
+</script>
+
 <nav>
 	<ul>
 		<li><a href="/books/the-pragmatic-programmer/exercises">Exercises</a></li>
@@ -7,10 +11,12 @@
 
 <h1>Notes on The Pragmatic Programmer</h1>
 
+<ToC />
+
 <p>Someday, I'll stop typing &ldquo;Pragmatic&rdquo; as <s>Pragmattic</s>!</p>
 
 <section>
-	<h2>Foreword&thinsp;/&thinsp;Preface</h2>
+	<h2 data-toc-id="forward-preface">Foreword&thinsp;/&thinsp;Preface</h2>
 	<dl>
 		<dt>
 			pp. xx&ndash;xxi: What &ldquo;Pragmatic Programmer&rdquo; characteristics
@@ -70,7 +76,7 @@
 </section>
 
 <section>
-	<h2>Chapter One</h2>
+	<h2 data-toc-id="chapter-one">Chapter One</h2>
 
 	<dl>
 		<dt>pp. 1&ndash;1: It&rsquo;s Your Life</dt>
@@ -303,7 +309,7 @@
 </section>
 
 <section>
-	<h2>Chapter Two</h2>
+	<h2 data-toc-id="chapter-two">Chapter Two</h2>
 
 	<dl>
 		<dt>pp. 28&ndash;30: The Essence of Good Design</dt>
