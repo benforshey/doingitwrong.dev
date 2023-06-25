@@ -121,5 +121,26 @@
 			Foster an environment where it&rsquo;s easier to find and reuse existing
 			stuff than to write it yourself.
 		</dd>
+
+		<dt>p. 40: &numero;17 Eliminate Effects Between Unrelated Things</dt>
+		<dd>
+			<cite
+				>Structured Design: Fundamentals of a Discipline of Computer Program and
+				Systems Design</cite
+			>
+			calls this <em>cohesion</em>. We want to design components that are
+			self-contained and independent of each other&mdash;components that have a
+			single, well-defined purpose. >
+		</dd>
+
+		<dt>p. 48: &numero;18 There Are No Final Decisions</dt>
+		<dd>&hellip;not even this one.</dd>
+
+		<dt>p. 49: &numero;19 Forgo Following Fads</dt>
+		<dd>
+			Your code will be far more durable if you don&rsquo;t make decisions based <em
+				>just</em
+			> on what&rsquo;s hot now.
+		</dd>
 	</dl>
 </section>

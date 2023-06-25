@@ -2,7 +2,7 @@
 export function load({ params }) {
   return {
     head: {
-      title: 'Home &middot; Doing it Wrong'
+      title: 'Home · Doing it Wrong'
     }
   };
 }

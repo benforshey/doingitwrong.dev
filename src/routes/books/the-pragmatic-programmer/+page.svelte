@@ -280,6 +280,7 @@
 				view in the right time, to the right people, in an
 				aesthetically&dash;pleasing format.
 			</p>
+
 			<p>
 				&ldquo;Know Your Audience&rdquo; is one area where I feel that I fall
 				short in my current job. There are a few meetings I present in that are
@@ -291,6 +292,7 @@
 				questions of my audience for the scientific side that I do not
 				understand.
 			</p>
+
 			<p>
 				I&squo;ve compared this job to feeling like a plumber: I can tell you
 				all about the pipes, junctions, and fluid dynamics, but I have little
@@ -321,6 +323,7 @@
 				representation within a system. You may choose to violate
 				<abbr>DRY</abbr> for performance reasons, but try to localize the duplication.
 			</p>
+
 			<p>
 				I&rsquo;m not sure how I feel about this: &ldquo;Where possible, always
 				use accessor functions to read and write the attributes of
@@ -330,6 +333,7 @@
 				does&rsquo;nt mean that I will always write getters and setters for my
 				Objects in JavaScript&hellip;though I might be more likely to use a Map.
 			</p>
+
 			<p>
 				Using accessors for objects honors Meyer&rsquo;s Uniform Access
 				principle, described in <i>Object&dash;Oriented Software Construction</i
@@ -340,15 +344,83 @@
 					through storage or through computation.</q
 				>
 			</p>
+
 			<p>
 				To prevent duplication in data structures, rather than manually creating
 				a fixed structure that represents external data (Struct / Class), stick
 				it in a simple key&thinsp;/&thinsp;value data structure. You can use a
 				tool like <a href="https://zod.dev/" rel="noopener" target="_blank"
 					>Zod
-				</a>to regain data surety.
+				</a>to regain data surety. To prevent inter&dash;developer duplication,
+				communicate!
 			</p>
-			<p>To prevent inter&dash;developer duplication, communicate!</p>
+		</dd>
+
+		<dt>pp. 39&ndash;46: Orthogonality</dt>
+		<dd>
+			<p>
+				Orthogonality in coding is synonymous with independence or decoupling.
+				Orthogonality gives you the benefits of increased productivity and
+				reduced risk.
+			</p>
+
+			<p>
+				You are more productive, because your code is ETC, easier to reuse, and
+				easier to compose. You take on less risk, because your code (with its
+				bugs) is encapsulated, better tested, less fragile, and generally will
+				have smaller interfaces to manage.
+			</p>
+
+			<p>
+				One way to measure orthogonality in your code is to ask &ldquo;If I
+				dramatically change the requirements behind a particular function, how
+				many modules are affected?&rdquo; Orthogonality suggests one.
+			</p>
+
+			<p>
+				Are you decoupled from the real world? I.e., are you relying on a family
+				name (or even a given name) remaining static? Are you using a telephone
+				number as an id without considering that it could change? In general,
+				don&rsquo;t rely on things that you don&rsquo;t control.
+			</p>
+
+			<p>Techniques to maintain orthogonality:</p>
+
+			<ul>
+				<li>evaluate third-party libraries for orthogonality</li>
+
+				<li>
+					keep your code decoupled (keep it shy&hellip;reveal little to other
+					modules)
+				</li>
+
+				<li>avoid global data</li>
+
+				<li>avoid similar functions (try the strategy pattern)</li>
+
+				<li>be critical of your own code</li>
+
+				<li>
+					pay attention when writing tests, writing docs, and fixing bugs: how
+					much do you have to change?
+				</li>
+			</ul>
+
+			<p>
+				Orthogonality differs from DRY in that DRY is focused on minimizing
+				duplication within a system, whereas orthogonality is focused on
+				reducing interdependence among a system&rsquo;s components.
+			</p>
+		</dd>
+
+		<dt>pp. 47&ndash;50: Reversibility</dt>
+		<dd>
+			<p>
+				This is one of those principles that I feel I could easily take too far.
+				The benefit probably comes in a judicious application. Seek
+				reversibility in code and architecture. Hide third-party APIs behind
+				your own abstraction layer.
+			</p>
 		</dd>
 	</dl>
 </section>

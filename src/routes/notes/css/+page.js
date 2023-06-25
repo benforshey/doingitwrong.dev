@@ -2,7 +2,7 @@
 export function load({ params }) {
   return {
     head: {
-      title: 'Notes: The Cascade Algorithm &middot; Doing it Wrong'
+      title: 'Notes: The Cascade Algorithm · Doing it Wrong'
     }
   };
 }

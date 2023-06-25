@@ -39,11 +39,14 @@
 	<p>
 		This test has changed names a few times, but I know it as the
 		CliftonStrengths assessment. &ldquo;Strengths&rdquo; is in the name, so
-		unsurprisingly it focuses on your strengths, focusing on your top five
-		categories (or themes) taken from a list of thiry&dash;four possible
-		categories. To summarize: know your strengths so that you can use them well.
+		unsurprisingly it focuses on your strengths, highlighting your top five
+		categories (or themes) from a list of thirty&dash;four possible categories.
+		To summarize: know your strengths so that you can use them well.
+	</p>
+
+	<p>
 		I remember being so struck by the assessment that I laminated all five of my
-		to themes; I wanted to grow into my strenghts and shore up my weaknessess.
+		to themes; I wanted to grow into my strengths and shore up my weaknesses.
 		Obviously, one needs to laminate that kind of knowledge. My top five themes:
 	</p>
 
@@ -83,14 +86,14 @@
 		<li><q>&hellip;you channel your efforts into the task at hand.</q></li>
 		<li>
 			<q
-				>You perservere until you have gained the knowledge and skills needed to
+				>You persevere until you have gained the knowledge and skills needed to
 				attain a goal.</q
 			>
 		</li>
 		<li>
 			<q
-				>You might prefer to be alone with your toughts rather than egage people
-				in small talk at a social event.</q
+				>You might prefer to be alone with your thoughts rather than engage
+				people in small talk at a social event.</q
 			>
 		</li>
 	</ul>
@@ -118,8 +121,8 @@
 	<ul>
 		<li>
 			<q
-				>Conversations that involve a lot of questions ans anwers stimulate your
-				mind.</q
+				>Conversations that involve a lot of questions ans answers stimulate
+				your mind.</q
 			>
 		</li>
 		<li>
@@ -141,7 +144,7 @@
 		<li>
 			<q
 				>It&rsquo;s very likely that you labor tirelessly on whatever needs to
-				be accoplished today.</q
+				be accomplished today.</q
 			>
 		</li>
 		<li>

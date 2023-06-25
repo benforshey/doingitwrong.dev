@@ -18,6 +18,8 @@
 
 <nav>
 	<ul>
+		<li><a href="/about">About Me</a></li>
+		<li><a href="/adages-laws-quotes">Adages, Laws, and Quotes</a></li>
 		<li><a href="/books">Books</a></li>
 		<li><a href="/notes">Notes</a></li>
 	</ul>

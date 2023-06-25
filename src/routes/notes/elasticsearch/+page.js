@@ -2,7 +2,7 @@
 export function load({ params }) {
   return {
     head: {
-      title: 'Notes: Elasticsearch &middot; Doing it Wrong'
+      title: 'Notes: Elasticsearch · Doing it Wrong'
     }
   };
 }

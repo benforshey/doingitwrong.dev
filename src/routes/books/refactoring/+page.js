@@ -2,7 +2,7 @@
 export function load({ params }) {
   return {
     head: {
-      title: 'Books: Refactoring &middot; Doing it Wrong'
+      title: 'Books: Refactoring · Doing it Wrong'
     }
   };
 }

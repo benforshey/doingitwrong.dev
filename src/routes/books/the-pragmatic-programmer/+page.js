@@ -2,7 +2,7 @@
 export function load({ params }) {
   return {
     head: {
-      title: 'Books: The Pragmatic Programmer &middot; Doing it Wrong'
+      title: 'Books: The Pragmatic Programmer · Doing it Wrong'
     }
   };
 }
