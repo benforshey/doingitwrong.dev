@@ -1,15 +1,83 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+html {
+	/* dark */
+	--brand-dark: var(--orange-3);
+	--text-1-dark: var(--gray-3);
+	--text-2-dark: var(--gray-5);
+	--surface-1-dark: var(--gray-12);
+	--surface-2-dark: var(--gray-11);
+	--surface-3-dark: var(--gray-10);
+	--surface-4-dark: var(--gray-9);
+	--background-dark: var(--gradient-8);
+	--border-dark: var(--gray-9);
+
+	/* light */
+	--brand-light: var(--orange-10);
+	--text-1-light: var(--gray-8);
+	--text-2-light: var(--gray-7);
+	--surface-1-light: var(--gray-0);
+	--surface-2-light: var(--gray-1);
+	--surface-3-light: var(--gray-2);
+	--surface-4-light: var(--gray-3);
+	--background-light: none;
+	--border-light: var(--gray-4);
 }
 
-* {
-	margin: 0;
+:root {
+	color-scheme: dark;
+
+	--brand: var(--brand-dark);
+	--text-1: var(--text-1-dark);
+	--text-2: var(--text-2-dark);
+	--surface-1: var(--surface-1-dark);
+	--surface-2: var(--surface-2-dark);
+	--surface-3: var(--surface-3-dark);
+	--surface-4: var(--surface-4-dark);
+	--background: var(--background-dark);
+	--border: var(--border-dark);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color-scheme: light;
+
+		--brand: var(--brand-light);
+		--text-1: var(--text-1-light);
+		--text-2: var(--text-2-light);
+		--surface-1: var(--surface-1-light);
+		--surface-2: var(--surface-2-light);
+		--surface-3: var(--surface-3-light);
+		--surface-4: var(--surface-4-light);
+		--background: var(--background-light);
+		--border: var(--border-light);
+	}
+}
+
+[color-scheme='dark'] {
+	color-scheme: dark;
+
+	--brand: var(--brand-dark);
+	--text-1: var(--text-1-dark);
+	--text-2: var(--text-2-dark);
+	--surface-1: var(--surface-1-dark);
+	--surface-2: var(--surface-2-dark);
+	--surface-3: var(--surface-3-dark);
+	--surface-4: var(--surface-4-dark);
+	--background: var(--background-dark);
+	--border: var(--border-dark);
+}
+
+[color-scheme='light'] {
+	color-scheme: light;
+
+	--brand: var(--brand-light);
+	--text-1: var(--text-1-light);
+	--text-2: var(--text-2-light);
+	--surface-1: var(--surface-1-light);
+	--surface-2: var(--surface-2-light);
+	--surface-3: var(--surface-3-light);
+	--surface-4: var(--surface-4-light);
+	--background: var(--background-light);
+	--border: var(--border-light);
 }
 
 html,
@@ -17,87 +85,23 @@ body {
 	height: 100%;
 }
 
-body {
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
+html {
+	color: var(--text-1);
+	accent-color: var(--link);
+	background-image: var(--background);
+	background-attachment: fixed;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-	display: block;
-	max-width: 100%;
+img {
+	border-radius: var(--radius-3);
 }
 
-input,
-button,
-textarea,
-select {
-	font: inherit;
+ul,
+ol {
+	list-style: none;
+	padding: 0;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	overflow-wrap: break-word;
-}
-
-/* End CSS Rest */
-blockquote {
-	background-color: ButtonFace;
-	margin-inline-start: 1.75em;
-	max-width: calc(100vw - 10em);
-	padding: 0.5em;
-	position: relative;
-}
-
-blockquote::after {
-	content: '\201D';
-	font-size: 8em;
-	color: GrayText;
-	position: absolute;
-	right: -0.375em;
-	top: 0.25em;
-	line-height: 0;
-}
-
-body {
-	background-color: Canvas;
-	color: CanvasText;
-	color-scheme: light dark;
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-		helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-		sans-serif;
-	isolation: isolate;
-}
-
-dl:has(dd) {
-	margin-block-start: 1em;
-}
-
-dd:has(dd) {
-	margin-inline-start: 2em;
-}
-
-dt {
-	font-weight: 600;
-}
-
-dt + dd {
-	margin-block-end: 2em;
-}
-
-blockquote:has(+ p),
-p + p {
-	margin-block-start: 1em;
-}
-
-ul:has(+ p) {
-	margin-block-start: 0.25em;
+li {
+	padding-inline-start: 0;
 }

@@ -3,6 +3,7 @@
 	import { binaryPerPlaceValue } from './lib';
 	import { nowAndTick } from '../../utils/time';
 
+	/** @type{Date} */
 	let now;
 
 	nowAndTick(() => {
@@ -12,11 +13,11 @@
 	$: time = {
 		hours: binaryPerPlaceValue(now.getHours().toString().padStart(2, '0')),
 		minutes: binaryPerPlaceValue(now.getMinutes().toString().padStart(2, '0')),
-		seconds: binaryPerPlaceValue(now.getSeconds().toString().padStart(2, '0'))
+		seconds: binaryPerPlaceValue(now.getSeconds().toString().padStart(2, '0')),
 	};
 </script>
 
-<time datetime={now}>
+<time datetime={now.toString()}>
 	{#each time.hours as hour}
 		<span class="column">
 			{#each hour.split('') as digit}
