@@ -4,23 +4,50 @@
 
 <ToC />
 
-<h2 data-toc-id="resume">Resume</h2>
-
-<object
-	aria-label="Ben Forshey's Resume"
-	type="application/pdf"
-	data="/documents/resume/Ben Forshey.pdf"
->
-	<a href="/documents/resume/Ben Forshey.pdf">Ben Forshey&rsquo;s resume</a>
-</object>
-
-<h2 data-toc-id="personality-tests">
-	Me, Through the Lens of Personality Tests
-</h2>
+<h2 data-toc-id="whats-in-a-name">What&rsquo;s in a Name?</h2>
 
 <p>
-	I&rsquo;ve taken a number of personality tests over the years, but only a
-	couple of them have deeply resonated with me. The <a
+	Hi, I&rsquo;m Ben. Here, I write about what I&rsquo;m learning and what
+	interests me. This site is part digital playground and part digital
+	garden&mdash;it&rsquo;s still figuring out what it wants to be when it grows
+	up.
+</p>
+
+<p>
+	I&rsquo;ve often found that my desire to &ldquo;get it right&rdquo; keeps me
+	from doing anything at all: I&rsquo;ll avoid starting a project because I hold
+	this harsh self-expectation that I shouldn&rsquo;t make mistakes. I
+	don&rsquo;t hold this expectation for others, so I decided it was time for a
+	bit of personal growth.
+</p>
+
+<p>
+	Most of what I know about web development has been from other people writing
+	technical content. When I was in college studying web design and development,
+	I fell in love with the web as a platform (or more accurately, <a
+		href="https://adactio.com/journal/6692"
+		target="_blank"
+		rel="noopener">a continuum</a
+	>) because of it&rsquo;s freely-available information. Who were these amazing
+	people that documented their own learning journeys? I couldn&rsquo;t believe
+	all this information was just sitting there, up for grabs.
+</p>
+
+<p>
+	The good things in life fall apart when we don&rsquo;t invest back into them,
+	so I wanted to make a place for myself to learn in the open, mistakes and all.
+	I wanted to create a place where that learner&rsquo;s attitude was baked in,
+	so I&rsquo;m <strong>Doing it Wrong</strong>. The point isn&rsquo;t to
+	celebrate being wrong&mdash;if you see a mistake, please correct me! My hope
+	is that with regular investment, this site will grow into a helpful repository
+	of information.
+</p>
+
+<h2 data-toc-id="personality-tests">Me, Described by Personality Tests</h2>
+
+<p>
+	I&rsquo;ve taken a number of personality tests over the years. Only two have
+	deeply resonated with me: the <a
 		href="https://www.enneagraminstitute.com/"
 		target="_blank"
 		rel="noopener">Enneagram</a
@@ -30,7 +57,7 @@
 		href="https://www.gallup.com/cliftonstrengths/en/252137/home.aspx"
 		target="_blank"
 		rel="noopener">CliftonStrengths (by Gallup)</a
-	> are probably my favorite two so far.
+	>.
 </p>
 
 <h3>Clifton Strengths</h3>
@@ -44,9 +71,9 @@
 </p>
 
 <p>
-	I remember being so struck by the assessment that I laminated all five of my
-	to themes; I wanted to grow into my strengths and shore up my weaknesses.
-	Obviously, one needs to laminate that kind of knowledge. My top five themes:
+	I remember being so struck by the assessment that I laminated my results; I
+	wanted to grow into my strengths and shore up my weaknesses. Obviously, one
+	needs to laminate that kind of knowledge. :-) My top five themes:
 </p>
 
 <ol>
@@ -165,10 +192,10 @@
 <h3>Enneagram</h3>
 
 <p>
-	There are nine types, and I&rsquo;m a type one. My basic fear is that I'm
-	broken or corrupt; my basic desire is to be good and balanced&mdash;full of
-	integrity. Integrity is important to me, which probably explains why I named
-	my freelance business Integris Web, LLC.
+	There are nine types, and I&rsquo;m a type one. My basic fear is that
+	I&rsquo;m broken or corrupt; my basic desire is to be good and
+	balanced&mdash;full of integrity. Integrity is important to me (which probably
+	explains why I named my freelance business Integris Web, LLC.)
 </p>
 
 <blockquote cite="https://www.enneagraminstitute.com/type-1">
@@ -186,61 +213,7 @@
 
 <p>
 	I don&rsquo;t want to sleep on that <q>&hellip;afraid of making a mistake</q>:
-	the only path forward for to learn in public was to name the whole site Doing
-	it Wrong. It&rsquo;s a hard fear for me to overcome, but in a place of health
-	I find ways to push past it.
+	the only path forward for to learn in public was to name the whole site
+	<strong>Doing it Wrong</strong>. It&rsquo;s a hard fear for me to overcome,
+	but in a place of health I find ways to push past it.
 </p>
-
-<h2 data-toc-id="timeline">Life, So Far</h2>
-
-<ul>
-	<li><time>1984</time>: Born in North Carolina</li>
-	<li>
-		<time>1990</time>: My family moved to my grandparent&rsquo;s rural farm in
-		Virginia
-	</li>
-	<li><time>2004</time>: Enlisted in the US Army</li>
-	<li><time>2005</time>: Moved to Washington State</li>
-	<li><time>2005</time>: Married my childhood sweetheart</li>
-	<li><time>2006</time>: Two became three: my first child was born</li>
-	<li><time>2007</time>: Deployed to Iraq</li>
-	<li><time>2009</time>: Deployed to Iraq</li>
-	<li><time>2010</time>: Three became four: my second child was born</li>
-	<li><time>2012</time>: Transitioned out of the US Army</li>
-	<li><time>2012</time>: Enlisted in the US Air Force Reserves</li>
-	<li><time>2014</time>: Four became five: my third child was born</li>
-	<li>
-		<time>2015</time>: Graduated from college with a BS in Web Design &amp;
-		Development
-	</li>
-	<li>
-		<time>2016</time>: Earned Graduate Certificate in Internet Marketing
-	</li>
-	<li>
-		<time>2016</time>: Won my first large freelance web development contract
-	</li>
-	<li><time>2016</time>: Moved to Virginia</li>
-	<li>
-		<time>2018</time>: Landed a job as a software developer at Liberty
-		University
-	</li>
-	<li>
-		<time>2019</time>: Five became six: my fourth (and last) child was born
-	</li>
-	<li><time>2021</time>: Transitioned out of the US Air Force Reserves</li>
-	<li>
-		<time>2022</time>: Signed on as a scientific software developer with NASA
-		GES DISC
-	</li>
-</ul>
-
-<style>
-	object {
-		aspect-ratio: 8.5 / 11;
-		/* TODO layout with grid and remove these sizing and layout properties */
-		display: block;
-		inline-size: 90dvw;
-		margin: 0 auto;
-		max-block-size: 90dvh;
-	}
-</style>

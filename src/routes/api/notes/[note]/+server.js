@@ -1,23 +1,25 @@
-import { getNotes } from "$lib/notes/service";
-import { deSlug } from "$lib/router/params";
-import { error, json } from "@sveltejs/kit";
+import { getNotes } from '$lib/notes/service';
+import { deSlug } from '$lib/router/params';
+import { error, json } from '@sveltejs/kit';
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ params }) {
-  const [notesError, notes] = await getNotes();
-  const title = deSlug(params.note);
+	const [notesError, notes] = await getNotes();
+	const title = deSlug(params.note);
 
-  if (notesError) {
-    throw error(404, "Notes not found.");
-  }
+	if (notesError) {
+		console.error(notesError);
 
-  const [note] = notes.filter((note) => {
-    return note.data.matter.title.toLowerCase() === title.toLowerCase();
-  });
+		error(404, 'Notes not found.');
+	}
 
-  if (!note) {
-    throw error(404, "Note not found.");
-  }
+	const [note] = notes.filter((note) => {
+		return note.data.matter.title.toLowerCase() === title.toLowerCase();
+	});
 
-  return json(note);
+	if (!note) {
+		error(404, 'Note not found.');
+	}
+
+	return json(note);
 }

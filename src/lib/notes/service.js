@@ -11,6 +11,9 @@ import { matter } from 'vfile-matter';
 
 export async function getNotes() {
 	try {
+		const formatter = new Intl.DateTimeFormat('en-US', {
+			dateStyle: 'full',
+		});
 		const rawNotes = [];
 		const pathToNotesDir = join(cwd(), 'src/features/notes');
 		const entries = await readdir(pathToNotesDir, {
@@ -25,6 +28,18 @@ export async function getNotes() {
 				);
 				const frontMatter = markdownFile.data.matter;
 
+				if (frontMatter.publishedOn) {
+					frontMatter.publishedOn = formatter.format(
+						new Date(frontMatter.publishedOn)
+					);
+				}
+
+				if (frontMatter.updatedOn) {
+					frontMatter.updatedOn = formatter.format(
+						new Date(frontMatter.updatedOn)
+					);
+				}
+
 				if (!(Object.keys(frontMatter).length > 0)) {
 					throw new Error(
 						`Note found at file ${entry.name} does not have FrontMatter. Notes must have FrontMatter!`
@@ -34,6 +49,13 @@ export async function getNotes() {
 				rawNotes.push(markdownFile);
 			}
 		}
+
+		rawNotes.sort((a, b) => {
+			const dateStringA = a.data.matter.updatedOn ?? a.data.matter.publishedOn;
+			const dateStringB = b.data.matter.updatedOn ?? b.data.matter.publishedOn;
+
+			return new Date(dateStringB) - new Date(dateStringA);
+		});
 
 		return [null, rawNotes];
 	} catch (error) {

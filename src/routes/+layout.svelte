@@ -1,11 +1,20 @@
 <script>
 	import { page } from '$app/stores';
-	import 'open-props/open-props.min.css'
-	import 'open-props/buttons';
-	import 'open-props/normalize';
+	import { onNavigate } from '$app/navigation';
 	import '../app.css';
-	import Footer from '../features/footer/Footer.svelte';
 	import Header from '../features/header/Header.svelte';
+
+	onNavigate((navigation) => {
+		if (document.startViewTransition) {
+			return new Promise((resolve) => {
+				document.startViewTransition(async () => {
+					resolve();
+
+					await navigation.complete;
+				});
+			});
+		}
+	});
 </script>
 
 <svelte:head>
@@ -14,33 +23,10 @@
 	{/if}
 </svelte:head>
 
-<div class="layout">
+<div>
 	<Header />
 
-	<main>
+	<main class="prose dark:prose-invert mx-auto">
 		<slot />
 	</main>
-
-	<Footer />
 </div>
-
-<style>
-	.layout {
-		height: 100dvh;
-		max-inline-size: var(--size-xl);
-		display: grid;
-		grid-template-rows: auto 1fr auto;
-		margin-inline: auto;
-		padding-inline: var(--size-7);
-	}
-
-	main {
-		padding-block: var(--size-9);
-	}
-
-	@media (min-width: 90rem) {
-		.layout {
-			padding-inline: 0;
-		}
-	}
-</style>

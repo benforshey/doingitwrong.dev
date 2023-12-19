@@ -1,26 +1,26 @@
 <script>
-	import DraftText from '../features/DraftText.svelte';
-	import BinaryDecimalClock from '../features/clocks/BinaryDecimalClock.svelte';
+	import { slugify } from '$lib/router/params';
+
+	export let data;
 </script>
 
-<!-- <h1>Doing it Wrong</h1> -->
+<h1>Doing it Wrong</h1>
 
-<BinaryDecimalClock />
-
-<p>
-	an
-	<DraftText
-		><del>imperfect</del>
-		<del>in-progress</del><ins>ever-growing</ins></DraftText
-	>
-	digital garden
-</p>
-
-<!-- <nav> -->
-<!-- 	<ul> -->
-<!-- 		<li><a href="/about">About Me</a></li> -->
-<!-- 		<li><a href="/adages-laws-quotes">Adages, Laws, and Quotes</a></li> -->
-<!-- 		<li><a href="/books">Books</a></li> -->
-<!-- 		<li><a href="/notes">Notes</a></li> -->
-<!-- 	</ul> -->
-<!-- </nav> -->
+<ul>
+	{#each data.noteMeta as meta}
+		<li>
+			<h2>
+				<a href={`/notes/${slugify(meta.title).toLowerCase()}`}>{meta.title}</a>
+			</h2>
+			<p class="">{meta.description}</p>
+			<p>
+				published <time datetime={meta.publishedOn}>{meta.publishedOn}</time>
+			</p>
+			{#if meta.updatedOn}
+				<p>
+					updated <time datetime={meta.updatedOn}>{meta.updatedOn}</time>
+				</p>
+			{/if}
+		</li>
+	{/each}
+</ul>

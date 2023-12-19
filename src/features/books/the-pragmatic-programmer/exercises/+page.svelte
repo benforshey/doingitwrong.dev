@@ -98,9 +98,10 @@
 		<p>
 			You can find tutorials on how to use Java within a mostly-functional
 			paradigm, but the majority of instructional material and the language
-			itself will push you into its class-based object-oriented design. I could
-			work hard to overcome the language's DNA by developing in a functional
-			style, but I would be fighting against the culture of the language.
+			itself will push you into its class-based-inhertance through
+			object-oriented design. I could work hard to overcome the language's DNA
+			by developing in a functional style, but I would be fighting against the
+			culture of the language.
 		</p>
 
 		<p>
@@ -145,5 +146,40 @@
 				systems can help mitigate this
 			</li>
 		</ul>
+	</dd>
+
+	<dt data-toc-id="3">p. 59: &numero;3</dt>
+	<dd>
+		<h2>Exercise</h2>
+
+		<p>
+			Marketing would like to sit down and brainstorm a few web page designs
+			with you. They are thinking of clickable image maps to take you to other
+			pages, and so on. But they can't decide on a model for the image—maybe
+			it's a car, or a phone, or a house. You have a list of target pages and
+			content; they'd like to see a few prototypes. Oh, by the way, you have 15
+			minutes. What tools might you use?
+		</p>
+
+		<h2>Solution before Reading Possible Answer</h2>
+
+		<p>
+			The problem (as presented) that the marketing team is trying to solve
+			seems to be the model for the image&mdash;they seem to have a strong idea
+			about the interaction they want. I'd like to present them with a
+			abstraction of a few different categories, along with some concrete
+			examples. So I'd probabaly use something like Figma to create clickable
+			maps that link to screenshots of the target page.
+		</p>
+
+		<p>
+			Why present an abstraction alongside concrete examples? There's strong
+			value in using something like low-fi wireframes to keep focus away from
+			the details of a specific example.
+		</p>
+
+		<h2>Solution after Reading Possible Answer</h2>
+
+		<p />
 	</dd>
 </dl>

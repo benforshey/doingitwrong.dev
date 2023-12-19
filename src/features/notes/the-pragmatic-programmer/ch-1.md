@@ -22,11 +22,11 @@ isDraft: false
 
 If you're unhappy about something that you've tried to change, you can use the agency you have in your life to attempt to change it.
 
-> You can change your organization or you can change your organization. --Martin Fowler
+> You can change your organization or you can change your organization.&mdash;Martin Fowler
 
 If your skillset is outdated (or you're looking to make a change), study interesting stuff in your own time. Your investing in yourself.
 
-- [ ] How does this resonate with you--do you feel you have agency in your profession?
+- [ ] How does this resonate with you&mdash;do you feel you have agency in your profession?
 
 ## The Cat Ate My Source Code
 
@@ -34,14 +34,14 @@ A core tenet of the pragmatic philosophy is taking responsibility for yourself a
 
 ### Take Responsibility
 
-Responsibility is something to which you actively agree--it's your commitment that ensures your responsibility is done right. When something goes wrong (that happens!), don't blame someone or something else; admit it and offer options, not lame excuses. To that end, you can rubber-duck the scenario to see how it will sound to your boss / client. Roleplaying the situation will help you find the low-hanging fruit of "Have you tried this..." and "Didn't you consider that?"
+Responsibility is something to which you actively agree&mdash;it's your commitment that ensures your responsibility is done right. When something goes wrong (that happens!), don't blame someone or something else; admit it and offer options, not lame excuses. To that end, you can rubber-duck the scenario to see how it will sound to your boss / client. Roleplaying the situation will help you find the low-hanging fruit of "Have you tried this..." and "Didn't you consider that?"
 
-- [ ] How does this sit with you--does it tend towards hard-nosed or professionalism?
+- [ ] How does this sit with you&mdash;does it tend towards hard-nosed or professionalism?
 
 ### Section Challenges
 
-- [ ] How do you react when someone--such as a bank teller, an auto mechanic, or a clerk--comes to you with a lame excuse? What do you think of them and their company as a result?
-- [ ] When you find yourself saying, "I don't know," be sure to follow it up with "--but I'll find out!" It's a great way to admit what you don't know, but then take responsibility like a pro.
+- [ ] How do you react when someone&mdash;such as a bank teller, an auto mechanic, or a clerk&mdash;comes to you with a lame excuse? What do you think of them and their company as a result?
+- [ ] When you find yourself saying, "I don't know," be sure to follow it up with "&mdash;but I'll find out!" It's a great way to admit what you don't know, but then take responsibility like a pro.
 
 ## Software Entropy
 
@@ -97,7 +97,7 @@ Your knowledge and experience are important day-to-day assets. In tech these ass
 
 The facts about computing, knowledge about application domains, and experience developing is called your **knowledge portfolio**. There are similarities to a financial portfolio:
 
-1. serous investors invest regularly--as a habit
+1. serious investors invest regularly&mdash;as a habit
 1. diversification is the key to long-term success
 1. smart investors balance their portfolio between conservative and high-risk / high-reward investments
 1. investors try to buy low and sell high for maximum return
@@ -110,10 +110,10 @@ The facts about computing, knowledge about application domains, and experience d
 The process of learning and staying current will expand your thinking, open new possibilities and ways of thinking. Philosophically, you're aiming for:
 
 - invest regularly: consistency is key
-- diversify: technical and non-technical skills, not just your day-to-day tech--be T-shaped
-- manage risk: go out on a limb--it may pay off, but have the stability that means that when a technology falls out of favor it doesn't end you
+- diversify: technical and non-technical skills, not just your day-to-day tech&mdash;be T-shaped
+- manage risk: go out on a limb&mdash;it may pay off, but have the stability that means that when a technology falls out of favor it doesn't end you
 - buy low, sell high: it's about adding value to you
-- review and rebalance: keep a sense of the field--what should you learn next?
+- review and rebalance: keep a sense of the field&mdash;what should you learn next?
 
 Some goals you could set (not exhaustive; not prescriptive):
 
@@ -127,7 +127,7 @@ Some goals you could set (not exhaustive; not prescriptive):
 
 Each time someone asks you a question that you don't know the answer to you have a tremendous opportunity to learn. You should admit that you don't know, but use that as a springboard to find the answer. Find someone who knows, because talking to other people expands your personal network. The Army tool of "hip-pocket training" is a good philosophy to make sure that you aren't wasting time that could be used for investing in your knowledge portfolio.
 
-It's not enough to consume--you must think critically about what you're consuming. You can practice this discipline by asking:
+It's not enough to consume&mdash;you must think critically about what you're consuming. You can practice this discipline by asking:
 
 - the "five whys"
 - who this benefits
@@ -152,7 +152,7 @@ A good idea is orphaned without effective communication.
 - choose your moment: make what you're saying relevant in time as well as context ("Is this a good time to talk about...?")
 - choose a style: attempt to tailor your message to your audience (are they already SMEs?); when in doubt, ask
 - make it look good: aesthetics are a signifier of trust
-- involve your audience: the documents we produce are often less important than the process we go through while producing them--get feedback, bring people together, pick brains
+- involve your audience: the documents we produce are often less important than the process we go through while producing them&mdash;get feedback, bring people together, pick brains
 - be a listener: ask good questions or ask people to restate the discussion in their own words; you might learn some amazing stuff this way
 - get back to people: always respond, even if with something like "I'll get back to you later."
 
@@ -161,7 +161,7 @@ A good idea is orphaned without effective communication.
 
 ### Documentation
 
-Build documentation in; don't bolt it on. Keep code and documentation together (they have the same reason to change). Commenting source code well is a part of good documentation. Don't comment so much that it loses value. For non-API comments (not public facing), discuss **why** something is done--its purpose and goal. The code itself should already show **how** it's done.
+Build documentation in; don't bolt it on. Keep code and documentation together (they have the same reason to change). Commenting source code well is a part of good documentation. Don't comment so much that it loses value. For non-API comments (not public facing), discuss **why** something is doneits purpose and goal. The code itself should already show **how** it's done.
 
 I also find tests to be a good form of documentation.
 

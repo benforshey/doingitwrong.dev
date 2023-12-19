@@ -7,6 +7,8 @@
 	onMount(() => {
 		// base.style.width = `${stack.scrollWidth}px`;
 	});
+	// https://css-tricks.com/snippets/css/typewriter-effect/#top-of-site
+	// https://codemyui.com/text-swap-animation/
 </script>
 
 <span class="base" bind:this={base}>
@@ -28,8 +30,8 @@
 		width: fit-content;
 	}
 
-	.stack :global(del:not(:first-of-type)),
-	.stack :global(ins) {
-		opacity: 0;
-	}
+	/* .stack :global(del:not(:first-of-type)), */
+	/* .stack :global(ins) { */
+	/* 	opacity: 0; */
+	/* } */
 </style>

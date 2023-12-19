@@ -1,12 +1,6 @@
-/** @type {import('./$types').PageLoad} */
-export async function load({ fetch }) {
-  const response = await fetch("/api/notes");
-  const notes = await response.json();
+import { redirect } from '@sveltejs/kit';
 
-  return {
-    head: {
-      title: "Notes · Doing it Wrong",
-    },
-    notes,
-  };
+/** @type {import('./$types').PageLoad} */
+export async function load() {
+	redirect(307, '/');
 }

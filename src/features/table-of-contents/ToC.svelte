@@ -2,13 +2,12 @@
 	import { onMount } from 'svelte';
 	import { nanoid } from 'nanoid';
 
-	/** @type {'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'} */
-	export let headingElement = 'h2';
+	let { headingElement = 'h2' } = $props();
 
 	// TODO it would be great to make the selector (data-toc-id) dynamic, but you'd need to write a fn that complied with how JS internally translates dashed-names into dashedNames. Doable, if worth it.
 
 	/** @type {Array<HTMLElement>} */
-	let content = [];
+	let content = $state([]);
 
 	onMount(() => {
 		content = Array.from(document.querySelectorAll('[data-toc-id]'));
@@ -33,8 +32,6 @@
 				<li>
 					<a href={`#${item.id}`}>{item.innerText}</a>
 				</li>
-			{:else}
-				<li>there&rsquo;s nothing to show</li>
 			{/each}
 		</ul>
 	</details>

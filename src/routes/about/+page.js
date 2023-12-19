@@ -2,7 +2,7 @@
 export function load({ params }) {
 	return {
 		head: {
-			title: 'About Me · Doing it Wrong',
+			title: 'About This Site · Doing it Wrong',
 		},
 	};
 }
