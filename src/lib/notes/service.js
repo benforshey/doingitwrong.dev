@@ -15,7 +15,7 @@ export async function getNotes() {
 			dateStyle: 'full',
 		});
 		const rawNotes = [];
-		const pathToNotesDir = join(cwd(), 'src/features/notes');
+		const pathToNotesDir = join(cwd(), 'static/notes');
 		const entries = await readdir(pathToNotesDir, {
 			recursive: true,
 			withFileTypes: true,
