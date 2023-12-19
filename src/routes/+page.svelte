@@ -21,6 +21,11 @@
 					updated <time datetime={meta.updatedOn}>{meta.updatedOn}</time>
 				</p>
 			{/if}
+			{#if meta.tags.length}
+				<p>
+					tagged as {meta.tags.join(', ')}
+				</p>
+			{/if}
 		</li>
 	{/each}
 </ul>
