@@ -1,3 +1,5 @@
+import { slugify } from '$lib/router/params';
+
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
 	const data = await fetch('/api/notes');
@@ -17,3 +19,5 @@ export async function load({ fetch }) {
 		noteMeta,
 	};
 }
+
+export const prerender = true;

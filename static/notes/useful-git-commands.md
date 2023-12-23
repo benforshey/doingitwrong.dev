@@ -14,7 +14,7 @@ Many of these are initially sourced from Stack Overflow or great articles that h
 
 ## Delete Branches that have been Remove from Remote
 
-For this to delete branches, local must know that remote has removed branches (which `git branch -v` lists as `[gone]`). One way to accomplish this is to [configure your fetch to always prune](#always-prune-on-fetch).
+For this to delete branches, local must know that remote has removed branches (which `git branch -v` lists as `[gone]`). One way to accomplish this is to configure your fetch to always prune.
 
 ```bash
 git branch -v | awk '/ \[gone\] /{ print $1 }' | xargs git branch -d
