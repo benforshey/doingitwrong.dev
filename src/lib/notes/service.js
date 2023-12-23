@@ -15,11 +15,7 @@ export async function getNotes() {
 			dateStyle: 'full',
 		});
 		const rawNotes = [];
-		// NOTE: This is a Vercel-ism.
-		const pathToNotesDir =
-			process.env.NODE_ENV === 'production'
-				? '.output/static/notes'
-				: join(cwd(), 'static/notes');
+		const pathToNotesDir = join(cwd(), 'static/notes');
 		const entries = await readdir(pathToNotesDir, {
 			recursive: true,
 			withFileTypes: true,
