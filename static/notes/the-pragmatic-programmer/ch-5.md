@@ -5,7 +5,7 @@ tags: [Books, The Pragmatic Programmer]
 
 publishedOn: '2023-12-20'
 updatedOn: null
-isDraft: true
+isDraft: false
 ---
 
 # Bend, or Break
@@ -116,7 +116,87 @@ Events represent the availability of information. They can come from external or
 
 ### Reactive Programming
 
+Reactive programming, as a paradigm, is often compared to using a spreadsheet: you change one value, and other values reactively update. Reactivity can be created with events, but _streams_ build reactivity in. RxJS is a good example of this paradigm. Event streams unify synchronous and asynchronous processing behind a common API.
+
+### Section Challenges
+
+- [ ] Exercise 19
+
+  In the FSM section we mentioned that you could move the generic state machine implementation into its own class. That class would probably be initialized by passing in a table of transitions and an initial state.
+
+  Try implementing the string extractor that way.
+
+- [ ] Exercise 20
+
+  Which of these technologies (perhaps in combination) would be a good fit for the following situations:
+
+  - If you receive three network interface down events within five minutes, notify the operations staff.
+  - If it is after sunset, and there is motion detected at the bottom of the stairs followed by motion detected at the top of the stairs, turn on the upstairs lights.
+  - You want to notify various reporting systems that an order was completed.
+  - In order to determine whether a customer qualifies for a car loan, the application needs to send requests to three backend services and wait for the responses.
+
 ## Transforming Programming
+
+All programs transform data, yet we rarely thing about creating transformations when designing software. There's great value in thinking about programs as being something that transforms inputs into outputs&mdash;like an industrial assembly line.
+
+- think of the Unix philosophy
+- programming is about code, but programs are about data
+- break down your program into transform |> transform, then repeat
+- even if your language doesn't support pipes, you can still use the philosophy of design
+
+```js
+const content = File.read(fileName);
+const lines = findMatchingLines(content, pattern);
+const result = truncateLines(lines);
+```
+
+- the reason transforms are worthwhile is that instead of hoarding state (encapsulation in objects), you pass it around&mdash;you lose a whole category of complexity and coupling
+- data becomes a flow&hellip;a peer to functionality
+- error handling can be done with either:
+  - an :ok/:error tuple (I like [error, data]), handled inside each transformation
+  - handle it in the pipeline (some kind of `andThen` function that only continues if no error)
+
+### Section Challenges
+
+- [ ] Exercise 21
+
+  Can you express the following requirements as a top-level transformation? That is, for each, identify the input and the output.
+
+  1. Shipping and sales tax are added to an order
+  1. Your application loads configuration information from a named file
+  1. Someone logs in to a web application
+
+- [ ] Exercise 22
+
+  You've identified the need to validate and convert an input field from a string into an integer between 18 and 150. The overall transformation is described by
+
+  ```elixir
+  field contents as string
+    -> [validate & convert]
+      -> {:ok, value} | {:error, reason}
+  ```
+
+  Write the individual transformations that make up `validate & convert`.
+
+- [ ] Exercise 23
+
+  In \_Language X Doesn't Have Pipelines, on page 153 we wrote:
+
+  ```elixir
+  const content = File.read(file_name);
+  const lines = find_matching_lines(content, pattern);
+  const result = truncate_lines(lines);
+  ```
+
+  Many people write OO code by chaining together method calls, and might be tempted to write this as something like:
+
+  ```elixir
+  const result = content_of(file_name)
+                  .find_matching_lines(pattern)
+                  .truncate_lines(lines)
+  ```
+
+  What's the difference between these two pieces of code? Which do you think we prefer and why?
 
 ## Inheritance Tax
 
@@ -128,6 +208,11 @@ Events represent the availability of information. They can come from external or
   - interfaces and protocols, which allow us to
   - delegation
   - mixins and traits
+- delegate to services: has-a trumps is-a
+
+### Section Challenges
+
+- [ ] The next time you find yourself subclassing, take a minute to examine the options. Can you achieve what you want the interfaces, delegation, and / or mixins? Can you reduce coupling by doing so?
 
 ## Configuration
 
