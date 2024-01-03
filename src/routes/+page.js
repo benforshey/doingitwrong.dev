@@ -6,10 +6,7 @@ export async function load({ fetch }) {
 	const response = await data.json();
 
 	const noteMeta = response.flatMap(({ data }) => {
-		const { matter } = data;
-		const { isDraft, ...frontMatter } = matter;
-
-		return isDraft ? [] : [frontMatter];
+		return data.matter;
 	});
 
 	return {

@@ -25,10 +25,7 @@ export async function entries(args) {
 	}
 
 	const noteMeta = notes.flatMap(({ data }) => {
-		const { matter } = data;
-		const { isDraft, ...frontMatter } = matter;
-
-		return isDraft ? [] : [frontMatter];
+		return data.matter;
 	});
 
 	const noteSlugs = noteMeta.map((note) => {
