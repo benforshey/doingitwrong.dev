@@ -20,6 +20,8 @@ export async function entries(args) {
 
 	if (notesError) {
 		console.error(notesError);
+
+		throw notesError;
 	}
 
 	const noteMeta = notes.flatMap(({ data }) => {
